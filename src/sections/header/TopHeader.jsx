@@ -22,7 +22,7 @@ function TopHeader() {
 
   return (
     <div
-      className="flex justify-between md:justify-center items-center py-2 md:py-4 px-4 md:px-2 
+      className="flex justify-between md:justify-center items-center py-2 md:py-4 px-4 pr-8 md:px-2 
     bg-primary-black dark:bg-primary-light md:shadow-2xl md:rounded-sm"
     >
       <div className="flex items-center gap-2 md:hidden">

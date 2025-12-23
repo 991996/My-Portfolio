@@ -27,12 +27,15 @@ const navMenu = [
 
 function Header() {
   return (
-    <div className="fixed top-0 md:top-20 md:left-[1%] xl:left-[30%] w-full md:w-fit z-200 shadow-2xl">
+    <div
+      className="fixed md:absolute top-0 left-0 md:top-30 md:-left-18 lg:-left-21 w-screen 
+    md:w-fit z-200 shadow-2xl bg-primary-black dark:bg-primary-light md:bg-transparent md:dark:bg-transparent"
+    >
       <TopHeader />
       <hr className="w-full border-white/20 dark:border-black/20 md:hidden" />
       {/* NAV MENU */}
       <div
-        className="grid grid-cols-4 md:grid-cols-1 text-center px-4 md:px-2 py-3
+        className="grid grid-cols-4 md:grid-cols-1 text-center px-4 md:px-2 lg:px-3 py-3
       bg-primary-black dark:bg-primary-light md:shadow-2xl md:rounded-sm md:mt-3"
       >
         {navMenu.map((nav, index) => {

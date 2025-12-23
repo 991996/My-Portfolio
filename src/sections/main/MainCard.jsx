@@ -4,11 +4,28 @@ import { Typewriter } from "react-simple-typewriter";
 import background1 from "@/assets/background1.png";
 import background2 from "@/assets/background2.png";
 import { FaLocationArrow } from "react-icons/fa6";
+import { useState, useEffect } from "react";
 
 function MainCard() {
+  const [background, setBackground] = useState(background1);
+  const [fade, setFade] = useState(true);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false);
+
+      setTimeout(() => {
+        setBackground((prev) =>
+          prev === background1 ? background2 : background1
+        );
+        setFade(true);
+      }, 500);
+    }, 10000);
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <div
-      className="w-[95%] md:w-[80%] xl:w-[30%] overflow-hidden rounded-md
+      className="overflow-hidden rounded-md mt-20 md:mt-10 xl:mt-0
                     md:shadow-[-15px_-15px_0px] shadow-primary-purple/30"
     >
       {/* THE CARD */}
@@ -16,9 +33,12 @@ function MainCard() {
         {/* Background Image */}
         <div className=" absolute top-0 left-0 w-full h-[66%] z-0">
           <img
-            src={background1}
+            src={background}
             alt="my image"
-            className="w-full h-full object-cover"
+            className={`
+              w-full h-full object-cover
+              transition-opacity duration-500 ease-in-out
+              ${fade ? "opacity-100" : "opacity-0"}`}
           />
         </div>
         {/* Curve div */}
