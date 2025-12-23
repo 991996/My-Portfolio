@@ -6,6 +6,7 @@
 @theme inline {
   /* My Colors */
   --color-primary-black: #222222;
+  --color-primary-light: oklch(97.7% 0.017 320.058);
   --color-primary-purple: #b851db;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

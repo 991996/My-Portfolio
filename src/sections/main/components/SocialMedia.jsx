@@ -1,7 +1,7 @@
 import { socialMedia } from "@/data/Data";
 function SocialMedia() {
   return (
-    <div className="text-white flex gap-3">
+    <div className="flex gap-3">
       {socialMedia.map((s, index) => {
         return (
           <a key={index} href={s.link} className="hover:text-primary-purple">

@@ -1,14 +1,12 @@
 import "./App.css";
+import Header from "./sections/header/Header";
 import MainCard from "./sections/main/MainCard";
 
 function App() {
   return (
     <>
-      {/* <div className=" h-screen flex justify-center items-center bg-black">
-        <MainCard />
-      </div> */}
       <div className="relative h-screen w-full overflow-hidden">
-        {/* الفيديو */}
+        {/* Video */}
         <video
           autoPlay
           loop
@@ -19,11 +17,13 @@ function App() {
           <source src="/video-bg.mp4" type="video/mp4" />
         </video>
 
-        {/* طبقة تعتيم (اختياري) */}
+        {/* Layout dark*/}
         <div className="absolute inset-0 bg-black/70"></div>
 
-        {/* المحتوى */}
-        <div className="relative z-10 flex items-center justify-center h-full text-white">
+        {/* content */}
+        <div className="relative z-10 flex items-center justify-center h-full text-white dark:text-gray-800 duration-300">
+          <Header />
+
           <MainCard />
         </div>
       </div>

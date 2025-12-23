@@ -8,11 +8,11 @@ import { FaLocationArrow } from "react-icons/fa6";
 function MainCard() {
   return (
     <div
-      className="text-white w-[95%] md:w-[80%] xl:w-[30%] overflow-hidden rounded-md
+      className="w-[95%] md:w-[80%] xl:w-[30%] overflow-hidden rounded-md
                     md:shadow-[-15px_-15px_0px] shadow-primary-purple/30"
     >
       {/* THE CARD */}
-      <div className=" relative h-140 bg-primary-black flex flex-col items-center justify-center">
+      <div className=" relative h-140 bg-primary-black dark:bg-primary-light flex flex-col items-center justify-center">
         {/* Background Image */}
         <div className=" absolute top-0 left-0 w-full h-[66%] z-0">
           <img
@@ -22,7 +22,7 @@ function MainCard() {
           />
         </div>
         {/* Curve div */}
-        <div className=" absolute bg-primary-black rounded-full w-[400%] aspect-square top-[55%]"></div>
+        <div className=" absolute bg-primary-black dark:bg-primary-light rounded-full w-[400%] aspect-square top-[55%]"></div>
 
         <div className=" relative z-1 flex flex-col items-center justify-center gap-6 pt-50">
           {/* Image RK Logo */}
@@ -57,7 +57,7 @@ function MainCard() {
       </div>
       {/* Contact Button */}
       <div className="relative z-1">
-        <hr className="w-full border-white/20"></hr>
+        <hr className="w-full border-white/20 dark:border-black/20" />
         <a
           className=" hover:text-primary-purple flex items-center justify-center gap-3 p-4 group"
           href="#"
