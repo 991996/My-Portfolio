@@ -4,6 +4,7 @@ import { Typewriter } from "react-simple-typewriter";
 import background1 from "@/assets/background1.png";
 import background2 from "@/assets/background2.png";
 import { FaLocationArrow } from "react-icons/fa6";
+import { IoMdCloudDownload } from "react-icons/io";
 import { useState, useEffect } from "react";
 
 function MainCard() {
@@ -78,13 +79,23 @@ function MainCard() {
       {/* Contact Button */}
       <div className="relative z-1">
         <hr className="w-full border-white/20 dark:border-black/20" />
-        <a
-          className=" hover:text-primary-purple flex items-center justify-center gap-3 p-4 group"
-          href="#"
-        >
-          <p className=" uppercase font-bold"> contact me</p>
-          <FaLocationArrow className=" group-hover:mb-1.5 duration-300" />
-        </a>
+        <div className="flex justify-around items-center px-6">
+          <a
+            className=" hover:text-primary-purple flex items-center justify-center gap-3 p-4 group"
+            href="#"
+          >
+            <p className=" uppercase font-bold">download cv</p>
+            <IoMdCloudDownload className=" group-hover:mb-1.5 duration-300" />
+          </a>
+          <div className="h-15 w-px from-white/20 dark:from-black/20 bg-linear-to-b"></div>
+          <a
+            className=" hover:text-primary-purple flex items-center justify-center gap-3 p-4 group"
+            href="#"
+          >
+            <p className=" uppercase font-bold"> contact me</p>
+            <FaLocationArrow className=" group-hover:mb-1.5 duration-300" />
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import { myInfo, myServices, about } from "@/data/Data";
 import Service from "./component/Service";
+import Title from "../Title";
 
 function AboutMe() {
   return (
@@ -10,15 +11,8 @@ function AboutMe() {
     >
       {/* Content about */}
       <div className="flex flex-col gap-6">
-        <div className=" relative">
-          <div
-            className=" absolute left-5 w-8 aspect-square bg-linear-to-br to-75% 
-          from-primary-purple/80 to-transparent rounded-full"
-          ></div>
-          <h1 className="text-xl font-bold px-8">About Me</h1>
-        </div>
+        <Title title="About Me" />
 
-        <hr className="border-white/20 dark:border-black/20" />
         <div className="px-8 text-gray-300 dark:text-gray-700 flex flex-col gap-1.5">
           <p className="font-bold">Hello! I'm {myInfo.name}</p>
           <p>
@@ -43,14 +37,8 @@ function AboutMe() {
 
       {/* Content Services */}
       <div className="flex flex-col gap-6 mt-10">
-        <div className=" relative">
-          <div
-            className=" absolute left-5 w-8 aspect-square bg-linear-to-br to-75% 
-          from-primary-purple/80 to-transparent rounded-full"
-          ></div>
-          <h1 className="text-xl font-bold px-8">My Services</h1>
-        </div>
-        <hr className="border-white/20 dark:border-black/20" />
+        <Title title="My Services" />
+
         <div className="grid grid-cols-1 md:grid-cols-2">
           {myServices.map((s, index) => {
             return (

@@ -19,6 +19,15 @@ export const myInfo = {
     "Freelancer",
   ],
   image: myImage,
+  education: {
+    date: "2014 - 2020",
+    university: "Damascus University",
+    country: "Syria",
+    desc: `Bachelor’s degree in Information Engineering ( Software
+engineering and information systems) with very good rating, and
+general average of 75.26 as a result of the examinations of the
+academic year 2020 - 2021.`,
+  },
 };
 
 export const socialMedia = [
@@ -73,5 +82,51 @@ export const about = [
   {
     title: "Freelance ",
     value: "Available",
+  },
+];
+
+export const experience = [
+  {
+    date: "2022 - Present",
+    job: "Front-end Developer",
+    company: "Freelance",
+    desc: "Optimize website and apps performance using latest technology.",
+  },
+  {
+    date: "2019 - 2022",
+    job: "Full-stack Developer",
+    company: "Mactech - Qatar",
+    desc: `I worked as a Full Stack developer, handling front-end and back-end
+development, designing websites, and implementing customized
+software solutions to meet client needs. My responsibilities included
+developing user interfaces, maintaining applications, and building
+databases.`,
+  },
+  {
+    date: "2017",
+    job: "Web Application Developer",
+    company: "APPA - Syria",
+    desc: `I completed a long-term internship as a Web Application Developer,
+focusing on building dynamic and responsive web apps, analyzing
+requirements, and using modern web technologies.`,
+  },
+];
+
+export const codingList = [
+  {
+    name: "HTML / CSS",
+    number: 95,
+  },
+  {
+    name: "HTML / CSS",
+    number: 75,
+  },
+  {
+    name: "HTML / CSS",
+    number: 65,
+  },
+  {
+    name: "HTML / CSS",
+    number: 90,
   },
 ];

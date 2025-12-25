@@ -1,9 +1,19 @@
+import { useState } from "react";
 import "./App.css";
 import AboutMe from "./sections/aboutMe/AboutMe";
 import Header from "./sections/header/Header";
 import MainCard from "./sections/main/MainCard";
+import Resume from "./sections/resume/Resume";
+// eslint-disable-next-line no-unused-vars
+import { motion, AnimatePresence } from "motion/react";
 
 function App() {
+  const [active, setActive] = useState("about");
+
+  const content = {
+    about: <AboutMe />,
+    resume: <Resume />,
+  };
   return (
     <>
       <div className="relative xl:h-screen w-full overflow-hidden">
@@ -28,10 +38,30 @@ function App() {
           xl:shadow-[5px_15px_10px] shadow-black/30"
           >
             <MainCard />
-            <Header />
+            <Header active={active} setActive={setActive} />
           </div>
-          <div className="w-[97%] md:w-[80%] xl:w-[45%] relative -z-1">
+          <div
+            className="h-screen overflow-hidden hidden xl:block
+          w-[97%] md:w-[80%] xl:w-[45%] relative -z-1"
+          >
+            <AnimatePresence mode="sync">
+              <motion.div
+                key={active}
+                initial={{ y: [60, 580], opacity: 0 }}
+                animate={{ y: [580, 60], opacity: 1 }}
+                exit={{ y: [580, 0], opacity: 0 }}
+                transition={{ duration: 0.8, ease: "easeInOut" }}
+              >
+                {content[active]}
+              </motion.div>
+            </AnimatePresence>
+          </div>
+          <div
+            className="xl:hidden flex flex-col gap-3
+          w-[97%] md:w-[80%] relative -z-1"
+          >
             <AboutMe />
+            <Resume />
           </div>
         </div>
       </div>

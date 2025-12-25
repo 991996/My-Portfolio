@@ -25,10 +25,10 @@ const navMenu = [
   },
 ];
 
-function Header() {
+function Header({ active, setActive }) {
   return (
     <div
-      className="fixed md:absolute top-0 left-0 md:top-30 md:-left-18 lg:-left-21 w-screen 
+      className="fixed xl:absolute top-0 left-0 md:left-[1%] md:top-30 lg:left-7 xl:-left-21 w-screen 
     md:w-fit z-200 shadow-2xl bg-primary-black dark:bg-primary-light md:bg-transparent md:dark:bg-transparent"
     >
       <TopHeader />
@@ -48,7 +48,14 @@ function Header() {
                 index === navMenu.length - 1
                   ? ""
                   : "border-r md:border-b md:border-r-0"
-              } border-white/20 dark:border-black/10`}
+              } border-white/20 dark:border-black/10
+              ${active === nav.title ? "text-primary-purple" : ""}`}
+              onClick={() => {
+                setActive(nav.title);
+
+                const section = document.querySelector(nav.href);
+                section?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               {nav.icon}
               <p>{nav.title}</p>
