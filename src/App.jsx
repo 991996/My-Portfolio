@@ -6,6 +6,8 @@ import MainCard from "./sections/main/MainCard";
 import Resume from "./sections/resume/Resume";
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from "motion/react";
+import Works from "./sections/works/Works";
+import ContactMe from "./sections/contact/ContactMe";
 
 function App() {
   const [active, setActive] = useState("about");
@@ -13,6 +15,8 @@ function App() {
   const content = {
     about: <AboutMe />,
     resume: <Resume />,
+    works: <Works />,
+    contact: <ContactMe />,
   };
   return (
     <>
@@ -62,6 +66,8 @@ function App() {
           >
             <AboutMe />
             <Resume />
+            <Works />
+            <ContactMe />
           </div>
         </div>
       </div>

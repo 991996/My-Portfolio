@@ -28,6 +28,9 @@ engineering and information systems) with very good rating, and
 general average of 75.26 as a result of the examinations of the
 academic year 2020 - 2021.`,
   },
+  address: "Qatar,AL-Doha",
+  email: "raneemkador@gmail.com",
+  phone: "+97433820090",
 };
 
 export const socialMedia = [
@@ -52,7 +55,7 @@ export const socialMedia = [
     link: "www.instagram.com",
   },
 ];
-
+// ABOUT
 export const myServices = [
   {
     icon: <FaReact size={40} />,
@@ -85,6 +88,7 @@ export const about = [
   },
 ];
 
+// RESUME
 export const experience = [
   {
     date: "2022 - Present",
@@ -129,4 +133,38 @@ export const codingList = [
     name: "HTML / CSS",
     number: 90,
   },
+];
+
+export const knowledgeList = [
+  "Website hosting",
+  "Website hosting",
+  "Website hosting",
+  "Website hosting",
+  "Website hosting",
+  "Website hosting",
+  "Website hosting",
+];
+
+export const frontEndList = [
+  {
+    name: "React",
+    value: 80,
+  },
+  {
+    name: "React",
+    value: 80,
+  },
+  {
+    name: "React",
+    value: 80,
+  },
+  {
+    name: "React",
+    value: 80,
+  },
+];
+
+export const languagesList = [
+  { name: "Arabic", value: 10 },
+  { name: "English", value: 7 },
 ];

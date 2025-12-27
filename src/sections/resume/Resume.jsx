@@ -1,4 +1,11 @@
-import { codingList, experience, myInfo } from "@/data/Data";
+import {
+  codingList,
+  experience,
+  frontEndList,
+  knowledgeList,
+  languagesList,
+  myInfo,
+} from "@/data/Data";
 import { FaBriefcase } from "react-icons/fa6";
 import Experince from "./components/Experince";
 import Title from "../Title";
@@ -7,6 +14,11 @@ import { FaGraduationCap } from "react-icons/fa";
 import { FaCode } from "react-icons/fa";
 import CodingItem from "./components/CodingItem";
 import { TfiMenuAlt } from "react-icons/tfi";
+import { Check } from "lucide-react";
+import { FaHtml5 } from "react-icons/fa6";
+import { Progress } from "@/components/ui/progress";
+import { FaLanguage } from "react-icons/fa";
+import DotProgress from "./components/DotProgress";
 
 function Resume() {
   return (
@@ -72,7 +84,7 @@ function Resume() {
         {/* Skills section */}
         <div className="flex flex-col gap-6">
           <Title title="Skills" />
-          <div className="grid grid-cols-1 md:grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8">
             {/* CODING */}
             <div className="flex flex-col px-8">
               <SubTitle title="coding" icon={<FaCode size={30} />} />
@@ -83,8 +95,52 @@ function Resume() {
               </div>
             </div>
             {/* Knowledge */}
-            <div className="flex flex-col px-8">
+            <div className="flex flex-col gap-6 px-8">
               <SubTitle title="Knowledge" icon={<TfiMenuAlt size={30} />} />
+              <div className="flex flex-col gap-2">
+                {knowledgeList.map((k, index) => {
+                  return (
+                    <div key={index} className="flex items-center gap-3">
+                      <div className="text-primary-purple">
+                        <Check size={20} strokeWidth={3.5} />
+                      </div>
+
+                      <p>{k}</p>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            {/* FRONT END */}
+            <div className="flex flex-col gap-6 px-8">
+              <SubTitle title="front-end" icon={<FaHtml5 size={30} />} />
+              <div className="flex flex-col gap-6">
+                {frontEndList.map((f, index) => {
+                  return (
+                    <div key={index} className="flex flex-col">
+                      <p>{f.name}</p>
+                      <Progress
+                        value={f.value}
+                        className="[&>div]:bg-primary-purple bg-gray-300"
+                      />
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+            {/* Languages */}
+            <div className="flex flex-col gap-6 px-8">
+              <SubTitle title="Languages" icon={<FaLanguage size={30} />} />
+              <div className="flex flex-col gap-6">
+                {languagesList.map((lang, index) => {
+                  return (
+                    <div key={index} className="flex flex-col gap-2">
+                      <p>{lang.name}</p>
+                      <DotProgress value={lang.value} />
+                    </div>
+                  );
+                })}
+              </div>
             </div>
           </div>
         </div>
