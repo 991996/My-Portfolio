@@ -22,13 +22,13 @@ export default function Works() {
         <div className="w-full flex justify-between items-center">
           <Title title="Works" />
           {/* Filters */}
-          <div className="flex gap-4 pr-8">
+          <div className="flex gap-4 pr-4 md:pr-8">
             {["all", "website", "store", "landingPage"].map((cat) => (
               <button
                 key={cat}
                 onClick={() => setFilter(cat)}
                 className={`cursor-pointer hover:text-primary-purple duration-300
-                text-lg  capitalize ${
+                md:text-lg  capitalize ${
                   filter === cat ? "text-primary-purple" : ""
                 }`}
               >
