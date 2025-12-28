@@ -90,7 +90,7 @@ function MainCard() {
           <div className="h-15 w-px from-white/20 dark:from-black/20 bg-linear-to-b"></div>
           <a
             className=" hover:text-primary-purple flex items-center justify-center gap-3 p-4 group"
-            href="#"
+            href="https://wa.me/97433820090"
           >
             <p className=" uppercase font-bold"> contact me</p>
             <FaLocationArrow className=" group-hover:mb-1.5 duration-300" />

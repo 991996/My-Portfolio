@@ -12,6 +12,8 @@ import myImage from "@/assets/Logo.png";
 
 export const myInfo = {
   name: "Raneem Kadour",
+  aboutMe: `I am a Front-End Developer who enjoys turning ideas into beautiful and functional web interfaces.
+I enjoy working with React and Tailwind CSS, and I care deeply about user experience and the small details that make a big difference.`,
   jobTitle: [
     "Software Engineer",
     "Front-end Developer",
@@ -36,23 +38,23 @@ academic year 2020 - 2021.`,
 export const socialMedia = [
   {
     icon: <FaInstagram />,
-    link: "www.instagram.com",
+    link: "https://www.instagram.com/rkcode99/",
   },
   {
     icon: <FaXTwitter />,
-    link: "www.instagram.com",
+    link: "https://x.com/",
   },
   {
     icon: <FaGithub />,
-    link: "www.instagram.com",
+    link: "https://github.com/991996",
   },
   {
     icon: <FaLinkedin />,
-    link: "www.instagram.com",
+    link: "https://www.linkedin.com/",
   },
   {
     icon: <FaWhatsapp />,
-    link: "www.instagram.com",
+    link: "https://wa.me/97433820090",
   },
 ];
 // ABOUT
@@ -60,12 +62,12 @@ export const myServices = [
   {
     icon: <FaReact size={40} />,
     title: "Front-end",
-    desc: "Modern and mobile-ready website that will help you reach all of your marketing.",
+    desc: "Modern, responsive, and mobile-ready websites designed to help you achieve your marketing goals.",
   },
   {
     icon: <FaWordpress size={40} />,
     title: "WordPress Development",
-    desc: "WordPress development services improve business websites.",
+    desc: "Developing and customizing WordPress websites with a focus on clean design, responsiveness, and ease of use.",
   },
 ];
 
@@ -122,27 +124,26 @@ export const codingList = [
     number: 95,
   },
   {
-    name: "HTML / CSS",
+    name: "Tailwind CSS",
+    number: 90,
+  },
+  {
+    name: "Javascript",
     number: 75,
   },
   {
-    name: "HTML / CSS",
-    number: 65,
-  },
-  {
-    name: "HTML / CSS",
-    number: 90,
+    name: "React",
+    number: 80,
   },
 ];
 
 export const knowledgeList = [
-  "Website hosting",
-  "Website hosting",
-  "Website hosting",
-  "Website hosting",
-  "Website hosting",
-  "Website hosting",
-  "Website hosting",
+  "Website hosting & domain management",
+  "WordPress development",
+  "Hosting installation & setup",
+  "SEO optimization",
+  "Responsive & mobile-ready websites",
+  "Client communication & support",
 ];
 
 export const frontEndList = [
@@ -167,4 +168,44 @@ export const frontEndList = [
 export const languagesList = [
   { name: "Arabic", value: 10 },
   { name: "English", value: 7 },
+];
+
+// WORKS
+import landingPageImage from "@/assets/landingPage.PNG";
+import storeImage from "@/assets/my-store.PNG";
+import fastcomImage from "@/assets/fastcom.PNG";
+import loungeImage from "@/assets/lounge.PNG";
+export const works = [
+  {
+    id: 1,
+    title: "RK Store",
+    category: "store",
+    img: storeImage,
+    link: "https://rk-store-hrzckseq8-rkcodes-projects-64607a7f.vercel.app/",
+    size: 2,
+  },
+  {
+    id: 2,
+    title: "Fastcom",
+    category: "website",
+    img: fastcomImage,
+    link: "https://fastcom-website.vercel.app/",
+    size: 1,
+  },
+  {
+    id: 3,
+    title: "Lounge",
+    category: "landingPage",
+    img: loungeImage,
+    link: "https://cafe-website-lounge.vercel.app/",
+    size: 3,
+  },
+  {
+    id: 4,
+    title: "RK Code",
+    category: "landingPage",
+    img: landingPageImage,
+    link: "https://landing-page-seven-red-25.vercel.app/",
+    size: 1,
+  },
 ];

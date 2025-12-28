@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import AboutMe from "./sections/aboutMe/AboutMe";
 import Header from "./sections/header/Header";
@@ -18,6 +18,24 @@ function App() {
     works: <Works />,
     contact: <ContactMe />,
   };
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="fixed inset-0 flex items-center justify-center bg-primary-black z-50">
+        <span class="loader"></span>
+      </div>
+    );
+  }
   return (
     <>
       <div className="relative xl:h-screen w-full overflow-hidden">

@@ -1,7 +1,6 @@
 import {
   codingList,
   experience,
-  frontEndList,
   knowledgeList,
   languagesList,
   myInfo,
@@ -15,8 +14,8 @@ import { FaCode } from "react-icons/fa";
 import CodingItem from "./components/CodingItem";
 import { TfiMenuAlt } from "react-icons/tfi";
 import { Check } from "lucide-react";
-import { FaHtml5 } from "react-icons/fa6";
-import { Progress } from "@/components/ui/progress";
+// import { FaHtml5 } from "react-icons/fa6";
+// import { Progress } from "@/components/ui/progress";
 import { FaLanguage } from "react-icons/fa";
 import DotProgress from "./components/DotProgress";
 
@@ -25,7 +24,7 @@ function Resume() {
     <section
       id="resume"
       className=" relative xl:h-144 bg-primary-black dark:bg-primary-light 
-      rounded-md xl:rounded-l-none py-6 overflow-y-auto"
+      rounded-md xl:rounded-l-none py-6 overflow-y-auto pb-16"
     >
       {/* Content about */}
       <div className="flex flex-col gap-6">
@@ -100,7 +99,7 @@ function Resume() {
               <div className="flex flex-col gap-2">
                 {knowledgeList.map((k, index) => {
                   return (
-                    <div key={index} className="flex items-center gap-3">
+                    <div key={index} className="flex gap-3">
                       <div className="text-primary-purple">
                         <Check size={20} strokeWidth={3.5} />
                       </div>
@@ -112,7 +111,7 @@ function Resume() {
               </div>
             </div>
             {/* FRONT END */}
-            <div className="flex flex-col gap-6 px-8">
+            {/* <div className="flex flex-col gap-6 px-8">
               <SubTitle title="front-end" icon={<FaHtml5 size={30} />} />
               <div className="flex flex-col gap-6">
                 {frontEndList.map((f, index) => {
@@ -127,7 +126,7 @@ function Resume() {
                   );
                 })}
               </div>
-            </div>
+            </div> */}
             {/* Languages */}
             <div className="flex flex-col gap-6 px-8">
               <SubTitle title="Languages" icon={<FaLanguage size={30} />} />
