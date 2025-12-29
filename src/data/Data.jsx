@@ -175,13 +175,15 @@ import landingPageImage from "@/assets/landingPage.PNG";
 import storeImage from "@/assets/my-store.PNG";
 import fastcomImage from "@/assets/fastcom.PNG";
 import loungeImage from "@/assets/lounge.PNG";
+import grandstreamImage from "@/assets/grandstream.PNG";
+import mactechImage from "@/assets/mactech.PNG";
 export const works = [
   {
     id: 1,
     title: "RK Store",
     category: "store",
     img: storeImage,
-    link: "https://rk-store-hrzckseq8-rkcodes-projects-64607a7f.vercel.app/",
+    link: "https://rk-store-orcin.vercel.app/",
     size: 2,
   },
   {
@@ -206,6 +208,22 @@ export const works = [
     category: "landingPage",
     img: landingPageImage,
     link: "https://landing-page-seven-red-25.vercel.app/",
+    size: 1,
+  },
+  {
+    id: 5,
+    title: "GrandStream",
+    category: "store",
+    img: grandstreamImage,
+    link: "https://mactech-grand-stream.vercel.app/",
+    size: 2,
+  },
+  {
+    id: 6,
+    title: "Mactech",
+    category: "website",
+    img: mactechImage,
+    link: "https://mactech.qa/",
     size: 1,
   },
 ];
