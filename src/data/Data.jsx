@@ -177,6 +177,8 @@ import fastcomImage from "@/assets/fastcom.PNG";
 import loungeImage from "@/assets/lounge.PNG";
 import grandstreamImage from "@/assets/grandstream.PNG";
 import mactechImage from "@/assets/mactech.PNG";
+import bookStoreImage from "@/assets/Book-house.PNG";
+
 export const works = [
   {
     id: 1,
@@ -224,6 +226,14 @@ export const works = [
     category: "website",
     img: mactechImage,
     link: "https://mactech.qa/",
+    size: 1,
+  },
+  {
+    id: 7,
+    title: "Book Store",
+    category: "landingPage",
+    img: bookStoreImage,
+    link: "https://book-house-woad.vercel.app/",
     size: 1,
   },
 ];
