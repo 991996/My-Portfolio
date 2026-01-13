@@ -178,6 +178,7 @@ import loungeImage from "@/assets/lounge.PNG";
 import grandstreamImage from "@/assets/grandstream.PNG";
 import mactechImage from "@/assets/mactech.PNG";
 import bookStoreImage from "@/assets/Book-house.PNG";
+import architectsImage from "@/assets/architects.PNG";
 
 export const works = [
   {
@@ -205,21 +206,23 @@ export const works = [
     size: 3,
   },
   {
-    id: 4,
-    title: "RK Code",
+    id: 7,
+    title: "Book Store",
     category: "landingPage",
-    img: landingPageImage,
-    link: "https://landing-page-seven-red-25.vercel.app/",
+    img: bookStoreImage,
+    link: "https://book-house-woad.vercel.app/",
     size: 1,
   },
+
   {
-    id: 5,
-    title: "GrandStream",
-    category: "store",
-    img: grandstreamImage,
-    link: "https://mactech-grand-stream.vercel.app/",
+    id: 8,
+    title: "Vision Architects",
+    category: "website",
+    img: architectsImage,
+    link: "https://vision-architects.vercel.app/",
     size: 2,
   },
+
   {
     id: 6,
     title: "Mactech",
@@ -229,11 +232,20 @@ export const works = [
     size: 1,
   },
   {
-    id: 7,
-    title: "Book Store",
+    id: 4,
+    title: "RK Code",
     category: "landingPage",
-    img: bookStoreImage,
-    link: "https://book-house-woad.vercel.app/",
+    img: landingPageImage,
+    link: "https://landing-page-seven-red-25.vercel.app/",
     size: 1,
+  },
+
+  {
+    id: 5,
+    title: "GrandStream",
+    category: "store",
+    img: grandstreamImage,
+    link: "https://mactech-grand-stream.vercel.app/",
+    size: 2,
   },
 ];
