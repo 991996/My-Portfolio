@@ -179,6 +179,7 @@ import grandstreamImage from "@/assets/grandstream.PNG";
 import mactechImage from "@/assets/mactech.PNG";
 import bookStoreImage from "@/assets/Book-house.PNG";
 import architectsImage from "@/assets/architects.PNG";
+import alhadhriImage from "@/assets/alhadhri.PNG";
 
 export const works = [
   {
@@ -222,15 +223,15 @@ export const works = [
     link: "https://vision-architects.vercel.app/",
     size: 2,
   },
-
   {
-    id: 6,
-    title: "Mactech",
+    id: 9,
+    title: "Alhadhri (WordPress)",
     category: "website",
-    img: mactechImage,
-    link: "https://mactech.qa/",
+    img: alhadhriImage,
+    link: "https://alhadhrilawfirm.com/",
     size: 1,
   },
+
   {
     id: 4,
     title: "RK Code",
@@ -247,5 +248,13 @@ export const works = [
     img: grandstreamImage,
     link: "https://mactech-grand-stream.vercel.app/",
     size: 2,
+  },
+  {
+    id: 6,
+    title: "Mactech",
+    category: "website",
+    img: mactechImage,
+    link: "https://mactech.qa/",
+    size: 1,
   },
 ];
