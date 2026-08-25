@@ -81,11 +81,12 @@ function MainCard() {
         <hr className="w-full border-white/20 dark:border-black/20" />
         <div className="flex justify-around items-center px-6">
           <a
-            className=" hover:text-primary-purple flex items-center justify-center gap-3 p-4 group"
-            href="#"
+            className="hover:text-primary-purple flex items-center justify-center gap-3 p-4 group"
+            href="/Resume.pdf"
+            download
           >
-            <p className=" uppercase font-bold">download cv</p>
-            <IoMdCloudDownload className=" group-hover:mb-1.5 duration-300" />
+            <p className="uppercase font-bold">Download CV</p>
+            <IoMdCloudDownload className="group-hover:mb-1.5 duration-300" />
           </a>
           <div className="h-15 w-px from-white/20 dark:from-black/20 bg-linear-to-b"></div>
           <a
