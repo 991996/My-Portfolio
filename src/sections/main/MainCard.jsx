@@ -62,15 +62,14 @@ function MainCard() {
           <div className="flex flex-col gap-3 text-center justify-center items-center">
             <h1 className="text-2xl font-bold">{myInfo.name}</h1>
             <div className="h-8">
-              {/* <Typewriter
+              <Typewriter
                 words={myInfo.jobTitle}
                 loop
                 typeSpeed={80}
                 deleteSpeed={50}
                 delaySpeed={1000}
                 className="mb-3"
-              /> */}
-              <p>Frontend Developer</p>
+              />
             </div>
 
             <SocialMedia />

@@ -13,15 +13,16 @@ import {
 } from "react-icons/fa6";
 
 import myImage from "@/assets/Logo.png";
+import { SiTypescript, SiTailwindcss } from "react-icons/si";
 
 export const myInfo = {
   name: "Raneem Kadour",
   aboutMe:
     "I’m a Frontend Developer specializing in React and TypeScript, with a strong interest in building modern, responsive, and user-friendly web applications.\nI enjoy turning ideas and designs into clean, functional interfaces, with a focus on reusable components, responsive layouts, API integration, and a smooth user experience. I also have experience building and customizing WordPress websites and creating websites for different business needs.\nWith a background in Software Engineering and hands-on experience across web development projects, I’m continuously improving my skills and exploring better ways to build scalable and maintainable frontend applications.",
   jobTitle: [
-    "Software Engineer",
-    "Front-end Developer",
-    "Programmer",
+    "Frontend Developer",
+    "React Developer",
+    "React & TypeScript Developer",
     "Freelancer",
   ],
   image: myImage,
@@ -103,7 +104,7 @@ export const about = [
 // RESUME
 export const experience = [
   {
-    date: "2020 - Present",
+    date: "Project-based",
     job: "Front-end Developer",
     company: "Freelance",
     desc: [
@@ -127,8 +128,6 @@ export const experience = [
     ],
   },
 ];
-
-import { SiTypescript, SiTailwindcss } from "react-icons/si";
 
 export const codingList = [
   {

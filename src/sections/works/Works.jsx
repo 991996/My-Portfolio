@@ -110,6 +110,16 @@ export default function Works() {
                     </p>
                     <p className="text-gray-500 capitalize">{work.category}</p>
                     <p className="text-gray-400 text-sm">{work.description}</p>
+                    <div className="flex flex-wrap justify-center gap-2 mt-3">
+                      {work.technologies?.map((tech) => (
+                        <span
+                          key={tech}
+                          className="px-2 py-1 text-xs rounded-full bg-white/10"
+                        >
+                          {tech}
+                        </span>
+                      ))}
+                    </div>
                   </div>
                 </motion.a>
               );
