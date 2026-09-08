@@ -15,7 +15,14 @@ function Experince({ exp }) {
           {exp.company}
         </p>
         <p className="text-[15px] text-gray-300 dark:text-gray-500 ">
-          {exp.desc}
+          {exp.desc.map((d, index) => {
+            return (
+              <div key={index} className="flex items-start gap-2">
+                <div className="w-2 aspect-square shrink-0 mt-2 rounded-full bg-gray-300"></div>
+                <p>{d}</p>
+              </div>
+            );
+          })}
         </p>
       </div>
     </div>

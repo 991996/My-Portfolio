@@ -15,7 +15,7 @@ function AboutMe() {
 
         <div className="px-8 text-gray-300 dark:text-gray-700 flex flex-col gap-1.5">
           <p className="font-bold">Hello! I'm {myInfo.name}</p>
-          <p>{myInfo.aboutMe}</p>
+          <p className="whitespace-pre-line">{myInfo.aboutMe}</p>
           <div className="mt-3 grid grid-cols-1 xl:grid-cols-2">
             {about.map((a, index) => {
               return (

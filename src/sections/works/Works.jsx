@@ -5,8 +5,31 @@ import Title from "../Title";
 import { Link } from "lucide-react";
 import { works } from "@/data/Data";
 
+const categories = [
+  {
+    title: "All",
+    filter: "all",
+  },
+  {
+    title: "Web Apps",
+    filter: "web-app",
+  },
+  {
+    title: "Websites",
+    filter: "website",
+  },
+  {
+    title: "Landing Pages",
+    filter: "landing-page",
+  },
+  {
+    title: "WordPress",
+    filter: "wordpress",
+  },
+];
+
 export default function Works() {
-  const [filter, setFilter] = useState("all");
+  const [filter, setFilter] = useState(categories[0].filter);
 
   const filtered =
     filter === "all" ? works : works.filter((w) => w.category === filter);
@@ -23,16 +46,16 @@ export default function Works() {
           <Title title="Works" />
           {/* Filters */}
           <div className="flex gap-4 pr-4 md:pr-8">
-            {["all", "website", "store", "landingPage"].map((cat) => (
+            {categories.map((cat) => (
               <button
-                key={cat}
-                onClick={() => setFilter(cat)}
+                key={cat.filter}
+                onClick={() => setFilter(cat.filter)}
                 className={`cursor-pointer hover:text-primary-purple duration-300
                 md:text-lg  capitalize ${
                   filter === cat ? "text-primary-purple" : ""
                 }`}
               >
-                {cat}
+                {cat.title}
               </button>
             ))}
           </div>
@@ -86,6 +109,7 @@ export default function Works() {
                       {work.title}
                     </p>
                     <p className="text-gray-500 capitalize">{work.category}</p>
+                    <p className="text-gray-400 text-sm">{work.description}</p>
                   </div>
                 </motion.a>
               );

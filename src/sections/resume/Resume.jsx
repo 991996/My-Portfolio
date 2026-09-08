@@ -130,12 +130,12 @@ function Resume() {
             {/* Languages */}
             <div className="flex flex-col gap-6 px-8">
               <SubTitle title="Languages" icon={<FaLanguage size={30} />} />
-              <div className="flex flex-col gap-6">
+              <div className="flex flex-col gap-4">
                 {languagesList.map((lang, index) => {
                   return (
                     <div key={index} className="flex flex-col gap-2">
                       <p>{lang.name}</p>
-                      <DotProgress value={lang.value} />
+                      {/* <DotProgress value={lang.value} /> */}
                     </div>
                   );
                 })}
